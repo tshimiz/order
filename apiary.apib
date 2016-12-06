@@ -1,0 +1,96 @@
+FORMAT: 1A
+HOST: https://order123.mybluemix.net
+
+# order
+
+Polls is a simple API allowing consumers to view polls and vote in them.
+
+## Orders Collection [/orders]
+
+### Get Order Information [GET /orders/{id}]
+
+You may create your own question using this action. It takes a JSON
+object containing a question and a collection of answers in the
+form of choices.
+
++ Parameters
+    + id - A path variable that is required for a valid URL
+
++ Request (application/json)
+
+    + Headers
+
+            X-foo-header:abc
+
++ Response 200 (application/json)
+
+    + Headers
+        
+            X-foo-header:Hello abc
+            
+    + Body
+    
+            [
+                { "name" : "screw", "quantity" : "10"},
+                { "name" : "screw", "quantity" : "20"},
+                { "name" : "screw", "quantity" : "30"}
+            ]
+
+
+### Create a New Order [POST]
+
+You may create your own question using this action. It takes a JSON
+object containing a question and a collection of answers in the
+form of choices.
+
++ Request (application/json)
+
+    + Body
+
+            [
+                { "name" : "aaaaa", "quantity" : "100"},
+                { "name" : "bbbbb", "quantity" : "200"},
+                { "name" : "ccccc", "quantity" : "300"}
+            ]
+
++ Response 200 (application/json)
+
+    + Body
+
+            {"status": "success"}
+
+### Update an Order [PUT /orders/{id}]
+
+You may create your own question using this action. It takes a JSON
+object containing a question and a collection of answers in the
+form of choices.
+
++ Request (application/json)
+
+    + Body
+    
+            [
+                { "name" : "aaaaa", "quantity" : "100"},
+                { "name" : "bbbbb", "quantity" : "200"},
+                { "name" : "ccccc", "quantity" : "300"}
+            ]
+
++ Response 200 (application/json)
+
+    + Body
+
+            {"status": "success"}
+
+### Delete an Order [DELETE /orders/{id}]
+
+You may create your own question using this action. It takes a JSON
+object containing a question and a collection of answers in the
+form of choices.
+
++ Request (application/json)
+
++ Response 200 (application/json)
+
+    + Body
+
+            {"orderId": 4, "status": "success"}
