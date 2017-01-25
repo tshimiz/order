@@ -24,6 +24,20 @@ form of choices.
 
 + Response 200 (application/json)
 
+            + Schema
+             {
+                "type": "object",
+                "properties": {
+                "name": {
+                 "type": "string"
+                  },
+                  "quantity": {
+                  "type": "integer"
+                }
+                },
+               "additionalProperties": false
+              }
+      
     + Headers
         
             X-foo-header: Hello abc
