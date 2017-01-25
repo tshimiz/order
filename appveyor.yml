@@ -2,3 +2,4 @@ install:
   - npm install -g dredd@stable
 before_build:
   - dredd apiary.apib https://order123.mybluemix.net
+build: off
