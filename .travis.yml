@@ -1,6 +1,7 @@
 before_install:
 - npm install -g dredd@stable
 before_script:
+- dredd
 - ls -la
 env:
   global:
