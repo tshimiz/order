@@ -1,6 +1,6 @@
 reporter: apiary
 custom:
-  apiaryApiName:order37
+  apiaryApiName: order37
 dry-run: null
 hookfiles: null
 language: nodejs
